@@ -29,7 +29,7 @@
 		<div class="contenedor">
 			<h1 class="titulo">Guitarras inviesibles</h1>
 			<h3 class="title-a">Se la estrella del rock que síempre quisiste ser</h3>
-			<button>Conoce más</button>
+			<button class="button">Conoce más</button>
 		</div>
 	</section>
 	<section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
@@ -57,5 +57,49 @@
 			</div>
 		</article>
 	</section>
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="./images/invie-white.png" alt="Logotipo blanco">
+				<a href="tel:+573014011363"><strong>Telefono</strong><span>3057451236</span></a>
+				<a href="mailto:contacto@envie.com"><strong>E-mail</strong><span>contact@invie.com</span></a>
+			</div>
+			<form class="formulario">
+				<div class="col1">
+					<label for="nombre">Nombre</label>
+					<input type="text" required id="nombre" name="nombre" />
+					<label for="email">E-mail</label>
+					<input type="email" required id="email" name="email" />
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" id="mujer" checked name="sexo" value="mujer"> Mujer
+						</label>
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" value="hombre"> Hombre
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" checked name="intereses" id="cotizacion" value="cotizacion" /> Cotización
+						</label>
+						<label for="reclamos">
+							<input type="checkbox" name="intereses" id="reclamos" value="reclamos" /> Reclamos
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" name="intereses" id="comentarios" value="comentarios" /> Comentarios
+						</label>
+						<label for="otros">
+							<input type="checkbox" name="intereses" id="otros" value="otros" /> Otros
+						</label>
+					</div>
+				</div>
+				<div class="col2">
+					<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="25" rows="7"></textarea>
+					<input type="submit" value="Enviar" class="button" >
+				</div>
+			</form>
+		</div>
+	</footer>
 </body>
 </html>
