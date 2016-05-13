@@ -22,6 +22,12 @@ body {
 	display: inline-block;
 	margin-left: 30px;
 }
+.menu li:before {
+	content: '∘';
+	font-size: 25px;
+	line-height: 20px;
+	color: blue;
+}
 .portada {
 	background-image: url('../images/background.png');
 	color: white;
@@ -136,4 +142,24 @@ body {
 }
 .formulario input,textarea {
 	border-radius: 3px;
+}
+
+/* precios */
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+th {
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+td {
+	padding: 20px;
+}
+table,td,th {
+	border: 1px solid #273b47;
 }
