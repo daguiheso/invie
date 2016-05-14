@@ -82,6 +82,7 @@ video {
 }
 .background {
 	background-image: url('../images/background.png');
+	background-color: #466173;
 	background-size: cover;
 }
 .button {
@@ -412,5 +413,10 @@ video {
 	}
 	.guitarra img {
 		width: 200px;
+	}
+}
+@media screen and (--webkit-min-device-pixel-ratio: 2) {
+	.background {
+		background-image: url('../images/background2x.png');
 	}
 }
