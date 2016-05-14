@@ -107,6 +107,7 @@
 			</form>
 		</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 	<script>
 		var $burguerButton = document.getElementById('burguer-button');
@@ -131,11 +132,22 @@
 		function toggleMenu () {
 			$menu.classList.toggle('active')
 		}
+		function showMenu () {
+			$menu.classList.add('active')
+		}
+		function hideMenu () {
+			$menu.classList.remove('active')
+		}
 
-
+		/*be lazy js*/
 		var bLazy = new Blazy({
 		    selector: 'img'
 		});
+		/*hammer js*/
+		var $body = document.body;
+		var gestos = new Hammer($body);
+		gestos.on('swiperight', showMenu);
+		gestos.on('swipeleft', hideMenu);
 
 	</script>
 </body>
