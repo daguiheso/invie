@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Invie - tus mejores guitarras</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="./css/invie.css">
 </head>
@@ -107,9 +108,11 @@
 		var $menu = document.getElementById('menu');
 
 		// $burguerButton.addEventListener('touchstart', function() {
-		$burguerButton.addEventListener('click', function() {
+		$burguerButton.addEventListener('click',  toggleMenu)
+
+		function toggleMenu () {
 			$menu.classList.toggle('active')
-		})
+		}
 	</script>
 </body>
 </html>
