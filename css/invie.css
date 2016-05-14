@@ -195,7 +195,7 @@ video {
 }
 .contacto {
 	display: flex;
-    width: 300px;
+    width: 268px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -264,6 +264,7 @@ video {
 	right: 20px;
 	cursor: pointer;
 	z-index: 3;
+	color: white;
 }
 
 @media screen and (max-width: 800px) {
@@ -306,6 +307,15 @@ video {
 		position: static;
 		margin: 0;
 	}
+	/* precios */
+	.tabla {
+		margin: 50px 20px;
+	}
+	.tabla .contenedor {
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+
 }
 @media screen and (max-width: 767px) {
 	.footer .contenedor {
@@ -317,7 +327,7 @@ video {
 	.formulario {
 		display: block;
 		margin: 0 auto;
-		width: 300px;
+		width: 268px;
 	}
 	.intereses label {
 		display: block;
