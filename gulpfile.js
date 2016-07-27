@@ -1,7 +1,7 @@
 var gulp = require('gulp')
 var postcss = require('gulp-postcss')
 var browserSync = require('browser-sync').create()
-
+var autoprefixer = require('autoprefixer')
 
 // Server dev
 gulp.task('serve', function () {
@@ -15,7 +15,9 @@ gulp.task('serve', function () {
 // Process css
 gulp.task('css', function () {
 
-	var processors = []
+	var processors = [ 
+		autoprefixer( { browsers: ['> 5%', 'ie 8'] } ) // soporte a navegadores que tengan mas del 5% de uso e ie desde el 8
+	]
 
 	return gulp
 		.src('./src/*.css')
